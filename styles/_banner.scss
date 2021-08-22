@@ -1,0 +1,78 @@
+.banner {
+  position: relative;
+  background-image: url("../images/banner.png");
+  object-fit: cover;
+  display: block;
+  background-size: 100%;
+  max-width: 1920px;
+  height: 1080px;
+  color: white;
+
+  .banner-container {
+    .banner-tittles {
+      position: absolute;
+      top: 342px;
+      left: 213px;
+      width: 700px;
+
+      h1 {
+        font-family: map-get($fonts-family, secondary);
+        font-size: 15.4rem;
+        font-weight: bold;
+      }
+
+      h2 {
+        font-size: 5rem;
+      }
+
+      h3 {
+        font-size: 5rem;
+        font-family: map-get($fonts-family, secondary);
+        font-weight: bold;
+        letter-spacing: 20px;
+      }
+      p{
+        width: 500px;
+        font-size: 2.5rem;
+        line-height: 3.48rem;
+      }
+    }
+
+    .banner-buttons {
+      display: flex;
+      justify-content: center;
+
+      button {
+        width: 268px;
+        height: 78px;
+        border-radius: 10px;
+        border: 0;
+        padding: 10px;
+        font-size: 2.5rem;
+        background: #e0b973;
+        color: white;
+        cursor: pointer;
+
+        &:active {
+          box-shadow: 0 0 3px black;
+        }
+
+        i{
+          font-size: 2.5rem;
+          margin-right: 20px;
+        }
+      }
+
+      h3{
+        margin-top: 65px;
+        padding: 15px;
+        text-align: center;
+      }
+
+      i{
+        font-size: 6rem;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: map-get($fonts-size, base);
+}
+
+body {
+  font-size: map-get($fonts-size, global);
+  font-family: map-get($fonts-family, global);
+  color: map-get($colors, primary);
+}
+
+a {
+  text-decoration: none;
+}

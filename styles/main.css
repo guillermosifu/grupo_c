@@ -1,0 +1,453 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2.5rem;
+  font-family: "Montserrat";
+  color: #14274A;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: auto;
+}
+
+.header .logo {
+  font-family: "EB Garamond";
+  background-color: #e0b973;
+  padding: 50px;
+  margin-left: 10%;
+  border-radius: 0 0 50px 50px;
+  color: #14274a;
+  font-weight: bold;
+}
+
+.header .logo h2 {
+  font-size: 4rem;
+}
+
+.header .logo h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 10px;
+}
+
+.header .navegation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .navegation .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .navegation .nav li {
+  position: relative;
+}
+
+.header .navegation .nav li:first-child {
+  margin-left: 0;
+}
+
+.header .navegation .nav a {
+  padding: 50px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  color: #ffffff;
+}
+
+.header .navegation .nav a:hover {
+  color: #14274A;
+}
+
+.header .navegation .nav li.is-active a {
+  color: #ffffff;
+  cursor: default;
+}
+
+.header .navegation .nav li.is-active::after {
+  content: "";
+  position: absolute;
+  left: 26%;
+  bottom: -10px;
+  width: 50%;
+  height: 4px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.banner .background1 {
+  max-width: 1920px;
+  height: 1080px;
+  background-image: url("../images/fondo.png"), url("../images/banner1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner .background2 {
+  max-width: 1920px;
+  height: 1080px;
+  background-image: url("../images/fondo.png"), url("../images/banner2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner .background3 {
+  max-width: 1920px;
+  height: 1080px;
+  background-image: url("../images/fondo.png"), url("../images/banner3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner .banner-container {
+  color: white;
+}
+
+.banner .banner-container .banner-description {
+  margin: 93px 113px 0 113px;
+  padding: 100px;
+}
+
+.banner .banner-container .banner-description h1 {
+  font-family: "EB Garamond";
+  font-size: 15.4rem;
+  font-weight: bold;
+}
+
+.banner .banner-container .banner-description h2 {
+  font-size: 5rem;
+}
+
+.banner .banner-container .banner-description h3 {
+  font-size: 5rem;
+  font-family: "EB Garamond";
+  font-weight: bold;
+  letter-spacing: 20px;
+}
+
+.banner .banner-container .banner-description p {
+  width: 500px;
+  font-size: 2.5rem;
+  line-height: 3.48rem;
+}
+
+.banner .banner-container .banner-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner .banner-container .banner-items h3 {
+  margin-top: 30px;
+  padding: 15px;
+  text-align: center;
+}
+
+.banner .banner-container .banner-items .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 6rem;
+  cursor: pointer;
+}
+
+.room-types h2 {
+  padding: 83px;
+  text-align: center;
+  font-size: 3.6rem;
+}
+
+.btn {
+  width: 268px;
+  height: 78px;
+  border-radius: 10px;
+  border: 0;
+  padding: 10px;
+  font-size: 2.5rem;
+  background: #e0b973;
+  color: white;
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+.btn:active {
+  -webkit-box-shadow: 0 0 3px black;
+          box-shadow: 0 0 3px black;
+}
+
+.btn i {
+  font-size: 2.5rem;
+  margin-right: 20px;
+}
+
+.article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 69px;
+}
+
+.article .container {
+  width: 30%;
+  padding-left: 48.5px;
+  margin-bottom: 5%;
+  border-left: 1px solid #14274A;
+  margin-top: 5%;
+  margin-right: 113px;
+}
+
+.article .container h2 {
+  font-family: "EB Garamond";
+  font-size: 6rem;
+  padding-bottom: 19px;
+}
+
+.article .container p {
+  font-size: 2.5rem;
+  line-height: 40px;
+  padding-bottom: 30px;
+}
+
+.article figure img {
+  width: 866px;
+  height: 579px;
+  display: block;
+}
+
+.testimonial {
+  text-align: center;
+}
+
+.testimonial h2 {
+  font-size: 6rem;
+  padding: 10px;
+}
+
+.testimonial h3 {
+  font-size: 3rem;
+  padding: 10px;
+}
+
+.testimonial h4 {
+  font-size: 2.6rem;
+  padding: 10px;
+}
+
+.testimonial div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.testimonial div ul {
+  background-color: #E0B973;
+  color: white;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px 0 10px;
+  border-radius: 5px;
+  line-height: 50px;
+}
+
+.footer {
+  height: 280px;
+  background-color: #14274a;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer div div {
+  margin-bottom: 20px;
+}
+
+.footer div div h3 {
+  margin-left: 10px;
+  letter-spacing: 5px;
+}
+
+.footer div h2 {
+  font-family: "EB Garamond";
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+.footer div h3 {
+  font-size: 1.175rem;
+}
+
+.footer div h4 {
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+
+.footer div p {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.footer div li {
+  font-size: 1.6rem;
+  line-height: 50px;
+}
+
+.footer div li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer div li a i {
+  margin-right: 20px;
+}
+
+.footer div input {
+  width: 278px;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #e0b973;
+  background-color: transparent;
+  color: white;
+}
+
+.footer div input:focus {
+  outline: none;
+}
+
+.footer div input::-webkit-input-placeholder {
+  color: white;
+}
+
+.footer div input:-ms-input-placeholder {
+  color: white;
+}
+
+.footer div input::-ms-input-placeholder {
+  color: white;
+}
+
+.footer div input::placeholder {
+  color: white;
+}
+
+.footer div button {
+  width: 80px;
+  height: 50px;
+  background-color: #e0b973;
+  border: 0;
+  color: black;
+  font-size: 1.6rem;
+}
+
+.triangle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.triangle div {
+  margin-top: 109px;
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid #14274a;
+  border-left: 120px solid transparent;
+  border-right: 120px solid transparent;
+}
+/*# sourceMappingURL=main.css.map */

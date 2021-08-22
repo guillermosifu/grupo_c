@@ -1,0 +1,69 @@
+.header {
+  .logo {
+    font-family: map-get($fonts-family, secondary);
+    background-color: #e0b973;
+    padding: 50px;
+    margin-left: 10%;
+    border-radius: 0 0 50px 50px;
+    color: #14274a;
+    font-weight: bold;
+
+    h2 {
+      font-size: 4rem;
+    }
+    h3 {
+      text-align: center;
+      font-size: 1.5rem;
+      letter-spacing: 10px;
+    }
+  }
+
+  .navegation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .nav {
+      ul {
+        display: flex;
+        align-items: center;
+      }
+
+      li {
+        position: relative;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+
+      a {
+        padding: 50px;
+        transition: all 0.5s ease;
+        color: #ffffff;
+
+        &:hover {
+          color: #14274A;
+        }
+      }
+
+      li.is-active {
+        a {
+          color: #ffffff;
+          cursor: default;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 26%;
+          bottom: -10px;
+          width: 50%;
+          height: 4px;
+          background-color: #ffffff;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}

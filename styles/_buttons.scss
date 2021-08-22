@@ -1,0 +1,22 @@
+.btn {
+  width: 268px;
+  height: 78px;
+  border-radius: 10px;
+  border: 0;
+  padding: 10px;
+  font-size: 2.5rem;
+  background: #e0b973;
+  color: white;
+  cursor: pointer;
+  font-family: map-get($fonts-family, global);
+  font-weight: bold;
+
+  &:active {
+    box-shadow: 0 0 3px black;
+  }
+
+  i{
+    font-size: 2.5rem;
+    margin-right: 20px;
+  }
+}
