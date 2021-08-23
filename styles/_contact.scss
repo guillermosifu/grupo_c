@@ -1,0 +1,147 @@
+.contact {
+  background-color: #14274a;
+  height: 465px;
+
+  .banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      padding: 50px;
+      font-size: 8rem;
+      font-weight: bold;
+    }
+  }
+
+  @media (min-width: 0px) and (max-width: 960px) {
+    height: 280px;
+    .banner-container {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+.contact-container {
+  margin-top: 261px;
+  margin-left: 200px;
+  margin-right: 200px;
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  h2 {
+    font-family: map-get($fonts-family, secondary);
+    font-size: 6rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+  }
+  h3 {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  h4 {
+    font-size: 4rem;
+    line-height: 40px;
+    padding: 10px 0 10px;
+  }
+
+  p {
+    font-size: 3rem;
+    margin-bottom: 150px;
+    line-height: 60px;
+  }
+  .container-left {
+    width: 50%;
+  }
+  .container-right {
+    width: 570px;
+
+    input {
+      width: 570px;
+      padding: 20px;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #14274a;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    textarea {
+      width: 570px;
+      height: 342px;
+      padding: 20px;
+      font-size: 2.5rem;
+      color: #14274a;
+      margin-bottom: 52px;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .item {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  @media (min-width: 0px) and (max-width: 960px) {
+    text-align: center;
+    margin: 10px;
+    h2 {
+      margin-top: 50px;
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.5rem;
+      line-height: 20px;
+      margin-bottom: 0;
+    }
+
+    h3 {
+      display: none;
+    }
+    h3,
+    h4 {
+      font-size: 2rem;
+      padding: 0;
+    }
+
+    .container-left,
+    .container-right {
+      width: 100%;
+    }
+
+    .container-left {
+      padding: 50px;
+      h4 {
+        font-size: 1.5rem;
+        line-height: 20px;
+      }
+    }
+
+    .container-right {
+      input,
+      textarea {
+        width: 100%;
+      }
+
+      input {
+        padding: 15px;
+        margin-bottom: 15px;
+      }
+      textarea {
+        height: 150px;
+        margin-bottom: 25px;
+      }
+
+      .item {
+        justify-content: center;
+      }
+    }
+  }
+}

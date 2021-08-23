@@ -58,13 +58,14 @@ html {
 }
 
 body {
-  font-size: 2.5rem;
+  font-size: 1.2rem;
   font-family: "Montserrat";
   color: #14274A;
 }
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 .wrapper {
@@ -72,142 +73,135 @@ a {
   margin: auto;
 }
 
-.header .logo {
+.header .background-1,
+.header .background-2,
+.header .background-3 {
+  max-width: 1920px;
+  height: 1080px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header .background-1 {
+  background-image: url("../images/fondo.png"), url("../images/banner-1.png");
+}
+
+.header .background-2 {
+  background-image: url("../images/fondo.png"), url("../images/banner-2.png");
+}
+
+.header .background-3 {
+  background-image: url("../images/fondo.png"), url("../images/banner-3.png");
+}
+
+.header .banner .navegation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header .banner .navegation .logo {
   font-family: "EB Garamond";
   background-color: #e0b973;
-  padding: 50px;
-  margin-left: 10%;
+  padding: 45px;
   border-radius: 0 0 50px 50px;
   color: #14274a;
   font-weight: bold;
+  cursor: pointer;
 }
 
-.header .logo h2 {
+.header .banner .navegation .logo h2 {
   font-size: 4rem;
 }
 
-.header .logo h3 {
+.header .banner .navegation .logo h3 {
   text-align: center;
   font-size: 1.5rem;
   letter-spacing: 10px;
 }
 
-.header .navegation {
+.header .banner .navegation .nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  padding: 20px;
 }
 
-.header .navegation .nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header .navegation .nav li {
+.header .banner .navegation .nav li {
   position: relative;
 }
 
-.header .navegation .nav li:first-child {
+.header .banner .navegation .nav li:first-child {
   margin-left: 0;
 }
 
-.header .navegation .nav a {
-  padding: 50px;
+.header .banner .navegation .nav a {
+  font-size: 2.5rem;
+  padding: 20px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  color: #ffffff;
+  color: white;
 }
 
-.header .navegation .nav a:hover {
-  color: #14274A;
+.header .banner .navegation .nav a:hover {
+  color: #14274a;
 }
 
-.header .navegation .nav li.is-active a {
+.header .banner .navegation .nav li.is-active a {
   color: #ffffff;
   cursor: default;
 }
 
-.header .navegation .nav li.is-active::after {
+.header .banner .navegation .nav li.is-active::after {
   content: "";
   position: absolute;
-  left: 26%;
+  left: 21%;
   bottom: -10px;
-  width: 50%;
+  width: 60%;
   height: 4px;
   background-color: #ffffff;
   border-radius: 20px;
 }
 
-.banner .background1 {
-  max-width: 1920px;
-  height: 1080px;
-  background-image: url("../images/fondo.png"), url("../images/banner1.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.banner .background2 {
-  max-width: 1920px;
-  height: 1080px;
-  background-image: url("../images/fondo.png"), url("../images/banner2.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.banner .background3 {
-  max-width: 1920px;
-  height: 1080px;
-  background-image: url("../images/fondo.png"), url("../images/banner3.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.banner .banner-container {
+.header .banner .banner-container {
   color: white;
 }
 
-.banner .banner-container .banner-description {
-  margin: 93px 113px 0 113px;
+.header .banner .banner-container .banner-description {
+  margin: 93px 113px 50px 113px;
   padding: 100px;
 }
 
-.banner .banner-container .banner-description h1 {
+.header .banner .banner-container .banner-description h1 {
   font-family: "EB Garamond";
   font-size: 15.4rem;
   font-weight: bold;
 }
 
-.banner .banner-container .banner-description h2 {
+.header .banner .banner-container .banner-description h2 {
   font-size: 5rem;
 }
 
-.banner .banner-container .banner-description h3 {
+.header .banner .banner-container .banner-description h3 {
   font-size: 5rem;
   font-family: "EB Garamond";
   font-weight: bold;
   letter-spacing: 20px;
 }
 
-.banner .banner-container .banner-description p {
+.header .banner .banner-container .banner-description p {
   width: 500px;
   font-size: 2.5rem;
   line-height: 3.48rem;
 }
 
-.banner .banner-container .banner-items {
+.header .banner .banner-container .banner-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -216,13 +210,14 @@ a {
           justify-content: center;
 }
 
-.banner .banner-container .banner-items h3 {
+.header .banner .banner-container .banner-items h3 {
+  font-size: 2.5rem;
   margin-top: 30px;
   padding: 15px;
   text-align: center;
 }
 
-.banner .banner-container .banner-items .icon {
+.header .banner .banner-container .banner-items .icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -233,10 +228,63 @@ a {
   cursor: pointer;
 }
 
-.room-types h2 {
-  padding: 83px;
+@media (min-width: 0px) and (max-width: 960px) {
+  .header .background-1,
+  .header .background-2,
+  .header .background-3 {
+    max-width: 1920px;
+    height: 580px;
+  }
+  .header .logo {
+    display: none;
+  }
+  .header .banner .navegation .nav {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .header .banner .navegation .nav a {
+    font-size: 1.2rem;
+  }
+  .header .banner .banner-container .banner-description {
+    text-align: center;
+    margin: 0;
+    padding: 20px 5%;
+  }
+  .header .banner .banner-container .banner-description h1 {
+    font-size: 7rem;
+  }
+  .header .banner .banner-container .banner-description h2 {
+    font-size: 2.5rem;
+    padding: 10px;
+  }
+  .header .banner .banner-container .banner-description h3 {
+    font-size: 2.5rem;
+  }
+  .header .banner .banner-container .banner-description p {
+    padding: 30px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 100%;
+  }
+  .header .banner .banner-container .banner-items {
+    padding: 20px;
+  }
+  .header .banner .banner-container .banner-items .icon {
+    font-size: 3rem;
+  }
+}
+
+.extra h2 {
+  padding: 80px;
   text-align: center;
   font-size: 3.6rem;
+}
+
+@media (min-width: 0px) and (max-width: 960px) {
+  .extra h2 {
+    padding: 20px;
+    font-size: 1.5rem;
+  }
 }
 
 .btn {
@@ -263,6 +311,18 @@ a {
   margin-right: 20px;
 }
 
+@media (min-width: 0px) and (max-width: 960px) {
+  .btn {
+    width: 130px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  .btn i {
+    font-size: 1.2rem;
+    margin-right: 10px;
+  }
+}
+
 .article {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -270,15 +330,17 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 69px;
 }
 
 .article .container {
   width: 30%;
+  border-left: 1px solid #14274a;
   padding-left: 48.5px;
-  margin-bottom: 5%;
-  border-left: 1px solid #14274A;
   margin-top: 5%;
+  margin-bottom: 5%;
   margin-right: 113px;
 }
 
@@ -286,6 +348,7 @@ a {
   font-family: "EB Garamond";
   font-size: 6rem;
   padding-bottom: 19px;
+  font-weight: bold;
 }
 
 .article .container p {
@@ -294,10 +357,54 @@ a {
   padding-bottom: 30px;
 }
 
+.article figure {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.article figure .degraded {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../images/facilities/rectangule.png");
+}
+
 .article figure img {
-  width: 866px;
-  height: 579px;
+  width: 100%;
   display: block;
+}
+
+@media (min-width: 0px) and (max-width: 1560px) {
+  .article {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 30px;
+  }
+  .article .container {
+    width: 80%;
+    text-align: center;
+    border-left: 0;
+    padding-left: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .article .container h2 {
+    font-size: 3rem;
+  }
+  .article .container p {
+    font-size: 1.2rem;
+    line-height: 20px;
+  }
 }
 
 .testimonial {
@@ -328,7 +435,7 @@ a {
           justify-content: center;
 }
 
-.testimonial div ul {
+.testimonial div a {
   background-color: #E0B973;
   color: white;
   width: 50px;
@@ -338,13 +445,35 @@ a {
   line-height: 50px;
 }
 
+@media (min-width: 0px) and (max-width: 960px) {
+  .testimonial h2 {
+    font-size: 3rem;
+  }
+  .testimonial h3 {
+    font-size: 1.5rem;
+  }
+  .testimonial h4 {
+    font-size: 1.4rem;
+  }
+  .testimonial div a {
+    width: 25px;
+    height: 25px;
+    margin: 0 10px 0 10px;
+    border-radius: 5px;
+    line-height: 25px;
+  }
+}
+
 .footer {
-  height: 280px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #14274a;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -372,6 +501,7 @@ a {
 }
 
 .footer div h4 {
+  margin-top: 30px;
   font-size: 1.6rem;
   padding-bottom: 10px;
 }
@@ -395,42 +525,87 @@ a {
   margin-right: 20px;
 }
 
-.footer div input {
+.footer div .suscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer div .suscribe input {
   width: 278px;
   height: 50px;
   padding: 10px;
   border: 1px solid #e0b973;
+  border-radius: 0;
   background-color: transparent;
   color: white;
 }
 
-.footer div input:focus {
+.footer div .suscribe input:focus {
   outline: none;
 }
 
-.footer div input::-webkit-input-placeholder {
+.footer div .suscribe input::-webkit-input-placeholder {
   color: white;
 }
 
-.footer div input:-ms-input-placeholder {
+.footer div .suscribe input:-ms-input-placeholder {
   color: white;
 }
 
-.footer div input::-ms-input-placeholder {
+.footer div .suscribe input::-ms-input-placeholder {
   color: white;
 }
 
-.footer div input::placeholder {
+.footer div .suscribe input::placeholder {
   color: white;
 }
 
-.footer div button {
+.footer div .suscribe button {
   width: 80px;
   height: 50px;
   background-color: #e0b973;
   border: 0;
+  border-radius: 0;
   color: black;
   font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.footer div .suscribe button:active {
+  -webkit-box-shadow: 0 0 3px black;
+          box-shadow: 0 0 3px black;
+}
+
+@media (min-width: 0px) and (max-width: 960px) {
+  .footer {
+    text-align: center;
+  }
+  .footer div {
+    padding: 10px;
+  }
+  .footer .footer-a {
+    width: 100%;
+  }
+  .footer .footer-a p {
+    margin-bottom: 5px;
+  }
+  .footer .footer-b, .footer .footer-c {
+    width: 100%;
+  }
+  .footer .footer-b ul, .footer .footer-c ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .footer .footer-b ul li, .footer .footer-c ul li {
+    font-size: 1.2rem;
+  }
+  .footer .footer-b ul li a i, .footer .footer-c ul li a i {
+    margin-right: 5px;
+  }
 }
 
 .triangle {
@@ -443,11 +618,378 @@ a {
 }
 
 .triangle div {
-  margin-top: 109px;
+  margin-top: 110px;
   width: 0;
   height: 0;
   border-bottom: 100px solid #14274a;
   border-left: 120px solid transparent;
   border-right: 120px solid transparent;
+}
+
+@media (min-width: 0px) and (max-width: 960px) {
+  .triangle div {
+    margin-top: 55px;
+    border-bottom: 50px solid #14274a;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+  }
+}
+
+.facilities {
+  text-align: center;
+}
+
+.facilities h2 {
+  font-family: "EB Garamond";
+  font-size: 6rem;
+  font-weight: bold;
+  padding: 28px;
+  margin-top: 54px;
+}
+
+.facilities p {
+  font-size: 2.5rem;
+  line-height: 50px;
+  padding: 20px;
+  margin: 0 180px;
+}
+
+.facilities figure {
+  position: relative;
+  margin: 50px 170px 100px;
+}
+
+.facilities figure .degraded {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../images/facilities/rectangule.png");
+}
+
+.facilities figure img {
+  width: 100%;
+  display: block;
+}
+
+.facilities figure .tittle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.facilities figure .tittle h3 {
+  padding: 15px;
+  width: 684px;
+  height: 75px;
+  background-color: #fff;
+  font-size: 4.8rem;
+  font-weight: bold;
+  line-height: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+@media (min-width: 0px) and (max-width: 960px) {
+  .facilities {
+    padding: 25px;
+  }
+  .facilities h2 {
+    font-size: 3rem;
+    padding: 0;
+    margin-top: 0;
+  }
+  .facilities p {
+    font-size: 1.2rem;
+    line-height: 25px;
+    padding: 20px;
+    margin: 0;
+  }
+  .facilities figure {
+    position: relative;
+    margin: 20px 0 40px;
+  }
+  .facilities figure .tittle h3 {
+    padding: 8px;
+    width: 50%;
+    height: 35px;
+    font-size: 2rem;
+  }
+}
+
+.room {
+  text-align: center;
+}
+
+.room h2 {
+  font-family: "EB Garamond";
+  font-size: 6rem;
+  font-weight: bold;
+  padding: 28px;
+  margin-top: 54px;
+}
+
+.room p {
+  font-size: 2.5rem;
+  line-height: 50px;
+  padding: 20px;
+  margin: 0 180px;
+}
+
+.room figure {
+  position: relative;
+  margin: 50px 170px 100px;
+}
+
+.room figure .degraded {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/facilities/rectangule.png");
+}
+
+.room figure .room-items {
+  border: 1px solid #14274a;
+  padding: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.room figure .room-items h3 {
+  font-size: 2.5rem;
+}
+
+.room figure .room-items h3 i {
+  font-size: 1.8rem;
+  color: #e0b973;
+}
+
+.room figure img {
+  width: 100%;
+  display: block;
+}
+
+.room .tittle {
+  background-color: #14274a;
+}
+
+.room .tittle h3 {
+  color: white;
+  font-size: 6rem;
+  padding: 50px;
+}
+
+@media (min-width: 0px) and (max-width: 960px) {
+  .room {
+    padding: 25px;
+  }
+  .room h2 {
+    font-size: 3rem;
+    padding: 0;
+    margin-top: 0;
+  }
+  .room p {
+    font-size: 1.2rem;
+    line-height: 25px;
+    padding: 20px;
+    margin: 0;
+  }
+  .room figure {
+    position: relative;
+    margin: 0px 0 40px;
+  }
+  .room figure .tittle h3 {
+    padding: 8px;
+    width: 100%;
+    height: 35px;
+    font-size: 2rem;
+  }
+  .room figure .room-items {
+    padding: 20px;
+  }
+  .room figure .room-items h3 {
+    font-size: 1.2rem;
+  }
+  .room figure .room-items .btn {
+    font-size: 1.2rem;
+  }
+}
+
+.contact {
+  background-color: #14274a;
+  height: 465px;
+}
+
+.contact .banner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .banner-container h1 {
+  padding: 50px;
+  font-size: 8rem;
+  font-weight: bold;
+}
+
+@media (min-width: 0px) and (max-width: 960px) {
+  .contact {
+    height: 280px;
+  }
+  .contact .banner-container h1 {
+    font-size: 3rem;
+  }
+}
+
+.contact-container {
+  margin-top: 261px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.contact-container > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact-container h2 {
+  font-family: "EB Garamond";
+  font-size: 6rem;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.contact-container h3 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.contact-container h4 {
+  font-size: 4rem;
+  line-height: 40px;
+  padding: 10px 0 10px;
+}
+
+.contact-container p {
+  font-size: 3rem;
+  margin-bottom: 150px;
+  line-height: 60px;
+}
+
+.contact-container .container-left {
+  width: 50%;
+}
+
+.contact-container .container-right {
+  width: 570px;
+}
+
+.contact-container .container-right input {
+  width: 570px;
+  padding: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #14274a;
+}
+
+.contact-container .container-right input:focus {
+  outline: none;
+}
+
+.contact-container .container-right textarea {
+  width: 570px;
+  height: 342px;
+  padding: 20px;
+  font-size: 2.5rem;
+  color: #14274a;
+  margin-bottom: 52px;
+}
+
+.contact-container .container-right textarea:focus {
+  outline: none;
+}
+
+.contact-container .container-right .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media (min-width: 0px) and (max-width: 960px) {
+  .contact-container {
+    text-align: center;
+    margin: 10px;
+  }
+  .contact-container h2 {
+    margin-top: 50px;
+    font-size: 3rem;
+  }
+  .contact-container p {
+    font-size: 1.5rem;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+  .contact-container h3 {
+    display: none;
+  }
+  .contact-container h3,
+  .contact-container h4 {
+    font-size: 2rem;
+    padding: 0;
+  }
+  .contact-container .container-left,
+  .contact-container .container-right {
+    width: 100%;
+  }
+  .contact-container .container-left {
+    padding: 50px;
+  }
+  .contact-container .container-left h4 {
+    font-size: 1.5rem;
+    line-height: 20px;
+  }
+  .contact-container .container-right input,
+  .contact-container .container-right textarea {
+    width: 100%;
+  }
+  .contact-container .container-right input {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  .contact-container .container-right textarea {
+    height: 150px;
+    margin-bottom: 25px;
+  }
+  .contact-container .container-right .item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */

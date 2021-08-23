@@ -1,9 +1,10 @@
 .footer {
-  //margin-top: 109px;
-  height: 280px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #14274a;
   color: white;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 
@@ -26,6 +27,7 @@
     }
 
     h4 {
+      margin-top: 30px;
       font-size: 1.6rem;
       padding-bottom: 10px;
     }
@@ -47,30 +49,72 @@
       }
     }
 
-    input {
-      width: 278px;
-      height: 50px;
-      padding: 10px;
-      border: 1px solid #e0b973;
-      background-color: transparent;
-      color: white;
+    .suscribe {
 
-      &:focus {
-        outline: none;
+      display: flex;
+      input {
+        width: 278px;
+        height: 50px;
+        padding: 10px;
+        border: 1px solid #e0b973;
+        border-radius: 0;
+        background-color: transparent;
+        color: white;
+
+        &:focus {
+          outline: none;
+        }
+
+        &::placeholder {
+          color: white;
+        }
       }
 
-      &::placeholder {
-        color: white;
+      button {
+        width: 80px;
+        height: 50px;
+        background-color: #e0b973;
+        border: 0;
+        border-radius: 0;
+        color: black;
+        font-size: 1.6rem;
+        cursor: pointer;
+
+        &:active {
+          box-shadow: 0 0 3px black;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 0px) and (max-width: 960px) {
+
+    text-align: center;
+    div{
+      padding: 10px;
+    }
+    .footer-a {
+      width: 100%;
+      p {
+        margin-bottom: 5px;
       }
     }
 
-    button {
-      width: 80px;
-      height: 50px;
-      background-color: #e0b973;
-      border: 0;
-      color: black;
-      font-size: 1.6rem;
+    .footer-b, .footer-c {
+      width: 100%;
+      ul{
+        display: flex;
+        justify-content: space-around;
+        li {
+          font-size: 1.2rem;
+          a {
+            i {
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+
     }
   }
 }
@@ -79,11 +123,20 @@
   display: flex;
   justify-content: center;
   div {
-    margin-top: 109px;
+    margin-top: 110px;
     width: 0;
     height: 0;
     border-bottom: 100px solid #14274a;
     border-left: 120px solid transparent;
     border-right: 120px solid transparent;
+  }
+
+  @media (min-width: 0px) and (max-width: 960px) {
+    div {
+      margin-top: 55px;
+      border-bottom: 50px solid #14274a;
+      border-left: 60px solid transparent;
+      border-right: 60px solid transparent;
+    }
   }
 }
